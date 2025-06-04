@@ -125,16 +125,27 @@ export const newBlogTemplate = {
   content: ""
 };
 
+// Calculate reading time based on content length
+export const calculateReadingTime = (content) => {
+  const wordsPerMinute = 200;
+  const words = content.trim().split(/\s+/).length;
+  const minutes = Math.ceil(words / wordsPerMinute);
+  return `${minutes} min read`;
+};
+
 // Function to add a new blog post
 export const addNewBlogPost = (newPost) => {
-  // Generate a new ID (you might want to use a more sophisticated method in production)
   const newId = blogPosts.length + 1;
+  
+  // Calculate reading time
+  const readTime = calculateReadingTime(newPost.content);
   
   // Create the new blog post object
   const blogPost = {
     ...newBlogTemplate,
     ...newPost,
-    id: newId
+    id: newId,
+    readTime
   };
   
   // Add to the beginning of the array
