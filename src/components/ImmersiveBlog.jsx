@@ -128,7 +128,7 @@ const ImmersiveBlog = () => {
       {/* Bio Section */}
       <section className="relative z-10 flex flex-col md:flex-row items-center bg-gray-800/60 rounded-xl p-8 mb-12 shadow-lg max-w-2xl mx-auto -mt-24">
         <img
-          src="/Profile.jpg"
+          src={`${import.meta.env.BASE_URL}Profile.jpg`}
           alt="Profile"
           className="w-32 h-32 rounded-full object-cover border-4 border-purple-400 shadow-md mb-4 md:mb-0 md:mr-8"
         />
