@@ -133,11 +133,33 @@ const ImmersiveBlog = () => {
           className="w-32 h-32 rounded-full object-cover border-4 border-purple-400 shadow-md mb-4 md:mb-0 md:mr-8"
         />
         <div>
-          <h2 className="text-2xl font-bold text-purple-300 mb-2">Hi, I'm [Ryheem Bonaparte]!</h2>
-          <p className="text-gray-200 text-lg mb-4">
-            I'm passionate about technology, coding, and sharing my journey as I learn JavaScript, React, Python, and more. Welcome to my blog where I document my progress, share tips, and connect with fellow learners!
+          <h2 className="text-2xl font-bold text-purple-300 mb-2">Growing as a Developer | One Line of Code at a Time ⌨️</h2>
+          <p className="text-gray-200 text-lg mb-2">
+            I've been diving deep into:
           </p>
-          <div className="flex space-x-4 mt-2">
+          <ul className="list-disc list-inside text-gray-300 mb-2">
+            <li>HTML/CSS fundamentals</li>
+            <li>JavaScript programming</li>
+            <li>Python development</li>
+            <li>React framework</li>
+            <li>Building responsive websites</li>
+            <li>MySQL Database</li>
+          </ul>
+          <p className="text-gray-200 mb-2">
+            Currently working on expanding my portfolio and learning through hands-on projects. Each challenge is a new opportunity to grow!
+          </p>
+          <p className="text-green-300 font-semibold mb-1">🌱 What I've learned so far:</p>
+          <ul className="list-disc list-inside text-gray-300 mb-2">
+            <li>The importance of clean, maintainable code</li>
+            <li>Problem-solving through debugging</li>
+            <li>Building user-friendly interfaces</li>
+            <li>Version control with Git</li>
+            <li>Working with modern development tools</li>
+          </ul>
+          <div className="text-xs text-purple-400 mt-2">
+            #webdevelopment #coding #javascript #python #react #learninginpublic #techcommunity #codingjourney
+          </div>
+          <div className="flex space-x-4 mt-4">
             <a
               href="https://www.linkedin.com/in/ryheem-bonaparte"
               target="_blank"
