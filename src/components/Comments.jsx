@@ -35,6 +35,29 @@ const Comments = ({ postId }) => {
     setNewComment('');
   };
 
+  const handleLike = (commentId, isReply = false) => {
+    setComments(prevComments => 
+      prevComments.map(comment => {
+        if (isReply) {
+          // Handle reply likes
+          return {
+            ...comment,
+            replies: comment.replies.map(reply =>
+              reply.id === commentId
+                ? { ...reply, likes: reply.likes + 1 }
+                : reply
+            )
+          };
+        } else {
+          // Handle main comment likes
+          return comment.id === commentId
+            ? { ...comment, likes: comment.likes + 1 }
+            : comment;
+        }
+      })
+    );
+  };
+
   const Comment = ({ comment, onReply }) => (
     <div className="bg-gray-800/50 rounded-lg p-4 mb-4">
       <div className="flex items-start space-x-3">
@@ -59,7 +82,10 @@ const Comments = ({ postId }) => {
               <Reply className="w-4 h-4" />
               <span>Reply</span>
             </button>
-            <button className="flex items-center space-x-1 text-gray-400 hover:text-purple-400 transition-colors">
+            <button 
+              onClick={() => handleLike(comment.id, comment.isReply)}
+              className="flex items-center space-x-1 text-gray-400 hover:text-purple-400 transition-colors"
+            >
               <ThumbsUp className="w-4 h-4" />
               <span>{comment.likes}</span>
             </button>

@@ -19,6 +19,16 @@ const ImmersiveBlog = () => {
   const [sortBy, setSortBy] = useState('newest');
   const [readingProgress, setReadingProgress] = useState(0);
 
+  const handleLike = (postId) => {
+    setPosts(prevPosts => 
+      prevPosts.map(post => 
+        post.id === postId 
+          ? { ...post, likes: post.likes + 1 }
+          : post
+      )
+    );
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
@@ -319,7 +329,10 @@ const ImmersiveBlog = () => {
                       {expandedPost === post.id ? 'Show Less' : 'Read More'}
                     </button>
                     <div className="flex items-center space-x-4">
-                      <button className="flex items-center space-x-1 text-gray-400 hover:text-purple-400 transition-colors">
+                      <button 
+                        onClick={() => handleLike(post.id)}
+                        className="flex items-center space-x-1 text-gray-400 hover:text-purple-400 transition-colors"
+                      >
                         <Heart className="w-5 h-5" />
                         <span>{post.likes}</span>
                       </button>
