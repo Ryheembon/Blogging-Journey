@@ -126,41 +126,43 @@ const ImmersiveBlog = () => {
       </section>
 
       {/* Bio Section */}
-      <section className="relative z-10 flex flex-col md:flex-row items-center bg-gray-800/80 rounded-2xl p-10 mb-16 shadow-2xl max-w-4xl mx-auto -mt-24 border border-purple-700/30">
+      <section className="relative z-10 flex flex-col md:flex-row items-center bg-gray-800/90 rounded-xl p-6 mb-10 shadow-lg max-w-2xl mx-auto -mt-16 border border-purple-700/30">
         <img
           src={`${import.meta.env.BASE_URL}Profile.jpg`}
           alt="Profile"
-          className="w-40 h-40 rounded-full object-cover border-4 border-purple-400 shadow-lg mb-6 md:mb-0 md:mr-10"
+          className="w-28 h-28 rounded-full object-cover border-4 border-purple-400 shadow-md mb-4 md:mb-0 md:mr-6"
         />
         <div className="flex-1 w-full">
-          <h2 className="text-3xl font-extrabold text-purple-300 mb-4 text-center md:text-left">Growing as a Developer | One Line of Code at a Time ⌨️</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+          <h2 className="text-xl font-bold text-purple-300 mb-2 text-center md:text-left">
+            Growing as a Developer | One Line of Code at a Time ⌨️
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
             <div>
-              <h3 className="text-lg font-semibold text-purple-200 mb-2">I've been diving deep into:</h3>
-              <ul className="list-disc list-inside text-gray-200 space-y-1">
-                <li>HTML/CSS fundamentals</li>
-                <li>JavaScript programming</li>
-                <li>Python development</li>
-                <li>React framework</li>
-                <li>Building responsive websites</li>
-                <li>MySQL Database</li>
+              <h3 className="text-base font-semibold text-purple-200 mb-1">Diving Deep Into:</h3>
+              <ul className="list-disc list-inside text-gray-200 text-sm space-y-0.5">
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React</li>
+                <li>Responsive Design</li>
+                <li>MySQL</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-green-300 mb-2">🌱 What I've learned so far:</h3>
-              <ul className="list-disc list-inside text-gray-200 space-y-1">
-                <li>The importance of clean, maintainable code</li>
-                <li>Problem-solving through debugging</li>
-                <li>Building user-friendly interfaces</li>
-                <li>Version control with Git</li>
-                <li>Working with modern development tools</li>
+              <h3 className="text-base font-semibold text-green-300 mb-1">🌱 Lessons Learned:</h3>
+              <ul className="list-disc list-inside text-gray-200 text-sm space-y-0.5">
+                <li>Clean, maintainable code</li>
+                <li>Debugging & problem-solving</li>
+                <li>User-friendly interfaces</li>
+                <li>Version control (Git)</li>
+                <li>Modern dev tools</li>
               </ul>
             </div>
           </div>
-          <p className="text-gray-300 mb-4 text-center md:text-left">
-            Currently working on expanding my portfolio and learning through hands-on projects. Each challenge is a new opportunity to grow!
+          <p className="text-gray-300 text-sm mb-2 text-center md:text-left">
+            Expanding my portfolio and learning through hands-on projects. Each challenge is a new opportunity to grow!
           </p>
-          <div className="flex flex-wrap gap-2 text-xs text-purple-400 mb-4 justify-center md:justify-start">
+          <div className="flex flex-wrap gap-1 text-xs text-purple-400 mb-2 justify-center md:justify-start">
             <span>#webdevelopment</span>
             <span>#coding</span>
             <span>#javascript</span>
@@ -170,18 +172,18 @@ const ImmersiveBlog = () => {
             <span>#techcommunity</span>
             <span>#codingjourney</span>
           </div>
-          <div className="my-8 flex flex-col items-center">
+          <div className="my-4 flex flex-col items-center">
             <audio controls className="w-full max-w-xs rounded-lg shadow-md">
               <source src={`${import.meta.env.BASE_URL}warnth-logicx.mp3`} type="audio/mp3" />
               Your browser does not support the audio element.
             </audio>
           </div>
-          <div className="flex space-x-6 mt-4 justify-center md:justify-start">
+          <div className="flex space-x-4 mt-2 justify-center md:justify-start">
             <a
               href="https://www.linkedin.com/in/ryheem-bonaparte"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-purple-400 hover:text-purple-200 underline text-lg font-semibold"
+              className="text-purple-400 hover:text-purple-200 underline text-base font-semibold"
             >
               LinkedIn
             </a>
@@ -189,7 +191,7 @@ const ImmersiveBlog = () => {
               href="https://www.instagram.com/b3yond_the_hor1zon/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-purple-400 hover:text-purple-200 underline text-lg font-semibold"
+              className="text-purple-400 hover:text-purple-200 underline text-base font-semibold"
             >
               Instagram
             </a>
