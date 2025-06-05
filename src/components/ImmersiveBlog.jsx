@@ -159,6 +159,17 @@ const ImmersiveBlog = () => {
           <div className="text-xs text-purple-400 mt-2">
             #webdevelopment #coding #javascript #python #react #learninginpublic #techcommunity #codingjourney
           </div>
+          <div className="my-8 flex justify-center">
+            <iframe
+              width="100%"
+              height="166"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/ryheem-bonaparte/warnth-m4a&color=%23a78bfa&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+              title="SoundCloud Player"
+            ></iframe>
+          </div>
           <div className="flex space-x-4 mt-4">
             <a
               href="https://www.linkedin.com/in/ryheem-bonaparte"
