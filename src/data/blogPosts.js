@@ -84,7 +84,7 @@ Best Practices:
     category: "Programming",
     readTime: "10 min read",
     likes: 56,
-    image: "https://images.unsplash.com/photo-1526379879527-8559ecfcaecb?q=80&w=1000",
+    image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=1000",
     content: `Python is a versatile programming language that's perfect for data science. Its simple syntax and powerful libraries make it ideal for beginners.
 
 Essential Libraries:
@@ -110,7 +110,43 @@ Tips for Success:
 • Document your code and analysis
 • Practice with real-world datasets
 • Join Python data science communities`
-  }
+  },
+  {
+    id: 4,
+    title: "Fundamentals of DevOps",
+    excerpt: "Learn the core concepts and practices of DevOps, including continuous integration, continuous delivery, and infrastructure as code.",
+    category: "DevOps",
+    readTime: "15 min read",
+    likes: 42,
+    image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1000",
+    content: `DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to shorten the development lifecycle and provide continuous delivery.
+
+Core DevOps Practices:
+• Continuous Integration (CI): Automatically build and test code changes
+• Continuous Delivery (CD): Automate the release process
+• Infrastructure as Code (IaC): Manage infrastructure using code
+• Monitoring and Logging: Track application performance
+
+Getting Started with DevOps:
+1. Set up version control (Git)
+2. Implement CI/CD pipelines
+3. Use containerization (Docker)
+4. Adopt infrastructure automation
+
+Key DevOps Tools:
+• Jenkins: For CI/CD automation
+• Docker: For containerization
+• Kubernetes: For container orchestration
+• Terraform: For infrastructure as code
+
+Best Practices:
+• Automate everything possible
+• Implement comprehensive testing
+• Use version control for all code
+• Monitor and measure everything
+• Foster collaboration between teams`
+  },
+  
 ];
 
 // Template for adding new blog posts
