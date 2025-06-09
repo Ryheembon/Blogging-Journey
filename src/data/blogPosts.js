@@ -2,6 +2,51 @@
 export const blogPosts = [
   {
     id: 1,
+    title: "URL Shortener Project",
+    excerpt: "A full-stack URL shortening service built with Go and React, featuring a modern UI and RESTful API implementation.",
+    category: "Full Stack",
+    readTime: "8 min read",
+    likes: 0,
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000",
+    content: `I've developed a URL Shortener application that demonstrates my full-stack development skills using Go and React! 🚀
+
+Project Overview:
+• Full-stack URL shortening service
+• Modern, responsive user interface
+• RESTful API implementation
+• Secure URL generation and redirection
+
+Technical Stack:
+• Backend: Go (Golang)
+• Frontend: React
+• API: RESTful architecture
+• Styling: HTML/CSS
+
+Key Features:
+• URL shortening and redirection
+• Custom URL aliases
+• Analytics tracking
+• Responsive design
+• Secure URL generation
+
+Learning Points:
+• Go backend development
+• React frontend implementation
+• REST API design
+• Database integration
+• Security best practices
+
+The project showcases my ability to:
+• Build scalable backend services
+• Create modern, responsive UIs
+• Implement RESTful APIs
+• Handle data persistence
+• Ensure application security
+
+#GoLang #React #FullStack #WebDevelopment #RESTAPI #JavaScript #HTML #CSS #SoftwareEngineering #TechInProgress`
+  },
+  {
+    id: 2,
     title: "My Journey Through IBM's Container Course",
     excerpt: "A comprehensive journey through Docker, Kubernetes, and OpenShift - from building containers to managing complex deployments.",
     category: "DevOps",
@@ -50,7 +95,7 @@ The course wasn't just theoretical - it provided hands-on experience with real-w
 #Containers #Docker #Kubernetes #OpenShift #DevOps #IBM #CloudNative #GoLang #SoftwareEngineering #TechInProgress`
   },
   {
-    id: 2,
+    id: 3,
     title: "Getting Started with Kubernetes",
     excerpt: "Learn the fundamentals of container orchestration with Kubernetes, from basic concepts to deploying your first application.",
     category: "DevOps",
@@ -78,7 +123,7 @@ Best Practices:
 • Keep your container images up to date`
   },
   {
-    id: 3,
+    id: 4,
     title: "Python for Data Science",
     excerpt: "Master Python programming for data analysis, visualization, and machine learning with practical examples and best practices.",
     category: "Programming",
@@ -112,7 +157,7 @@ Tips for Success:
 • Join Python data science communities`
   },
   {
-    id: 4,
+    id: 5,
     title: "Fundamentals of DevOps",
     excerpt: "Learn the core concepts and practices of DevOps, including continuous integration, continuous delivery, and infrastructure as code.",
     category: "DevOps",
